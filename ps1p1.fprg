@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 04:44:40 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDM6NDE6MDMgUE07Mjg1Ng=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDQ6NDQ6NDAgUE07MTsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="n2" type="Real" array="False" size=""/>
+            <declare name="s" type="Real" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <assign variable="s" expression="n1 + n2"/>
+            <assign variable="p" expression="n1 * n2"/>
+            <assign variable="d" expression="n1 - n2"/>
+            <output expression="&quot;Sum is &quot; &amp; s" newline="True"/>
+            <output expression="&quot;Difference is &quot; &amp; d" newline="True"/>
+            <output expression="&quot;Product is &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

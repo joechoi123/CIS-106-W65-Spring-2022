@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 06:59:41 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDY6NDg6MDggUE07Mjg3MQ=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDY6NTk6NDEgUE07MTsyOTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MealPrice" type="Real" array="False" size=""/>
+            <declare name="Tip" type="Real" array="False" size=""/>
+            <declare name="TotalPrice" type="Real" array="False" size=""/>
+            <input variable="MealPrice"/>
+            <assign variable="Tip" expression="MealPrice * .15"/>
+            <assign variable="TotalPrice" expression="MealPrice + Tip"/>
+            <output expression="&quot;Tip: &quot; &amp; Tip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

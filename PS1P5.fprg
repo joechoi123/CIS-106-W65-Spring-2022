@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 07:05:49 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDY6NTk6NDcgUE07Mjg3Ng=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDItMTY7MDc6MDU6NDkgUE07MTsyOTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ItemAmount" type="Real" array="False" size=""/>
+            <declare name="Tax" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="ItemAmount"/>
+            <assign variable="Tax" expression="ItemAmount * .07"/>
+            <assign variable="Total" expression="ItemAmount + Tax"/>
+            <output expression="&quot;Amount of item: &quot; &amp; ItemAmount" newline="True"/>
+            <output expression="&quot;Amount of Tax: &quot; &amp; Tax" newline="True"/>
+            <output expression="&quot;Total Amount: &quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
